@@ -30,12 +30,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Vet Clinic Database <a name="about-project"></a>
 
 A database for a vet clinic to manage animals' information.
-
-**[your_project__name]** is a...
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -48,8 +45,6 @@ A database for a vet clinic to manage animals' information.
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
-
-<details>
 
 ### Key Features <a name="key-features"></a>
 
