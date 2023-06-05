@@ -36,11 +36,14 @@ A database for a vet clinic to manage animals' information.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
+<details>
+<details>
   <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
+</details>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
