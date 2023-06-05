@@ -37,14 +37,10 @@ A database for a vet clinic to manage animals' information.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
   <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
