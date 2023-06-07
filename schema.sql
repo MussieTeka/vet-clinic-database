@@ -7,3 +7,6 @@ CREATE TABLE animals (
   weight_kg decimal
 );
 
+-- add-query-update branch
+
+ALTER TABLE animals ADD COLUMN species varchar(100);
