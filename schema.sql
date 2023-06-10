@@ -8,11 +8,9 @@ CREATE TABLE animals (
 );
 
 -- add-query-update branch
-
 ALTER TABLE animals ADD COLUMN species varchar(100);
 
 -- query-multiple-tables branch
-
 -- Create the "owners" table with the specified columns
 CREATE TABLE owners (
   id SERIAL PRIMARY KEY,
@@ -24,6 +22,11 @@ CREATE TABLE species (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255)
 );
--- Modify the "animals" table to set the "id" column as auto-incremented primary key
-ALTER TABLE animals
-ALTER COLUMN id SET DATA TYPE SERIAL PRIMARY KEY;
+-- Alter the "animals" table to add an auto-incremented primary key "id" column
+ALTER TABLE animals ADD COLUMN id SERIAL PRIMARY KEY;
+-- Remove the existing "species" column from the "animals" table
+ALTER TABLE animals DROP COLUMN species;
+-- Add a new column "species_id" as a foreign key referencing the "species" table
+ALTER TABLE animals ADD COLUMN species_id INTEGER REFERENCES species;
+-- Add a new column "owner_id" as a foreign key referencing the "owners" table
+ALTER TABLE animals ADD COLUMN owner_id INTEGER REFERENCES owners;
