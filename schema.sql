@@ -30,3 +30,25 @@ ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INTEGER REFERENCES species;
 -- Add a new column "owner_id" as a foreign key referencing the "owners" table
 ALTER TABLE animals ADD COLUMN owner_id INTEGER REFERENCES owners;
+
+-- add-join-table branch
+-- Create the "vets" table
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR,
+    age INTEGER,
+    date_of_graduation DATE
+);
+-- Create the "specializations" join table
+CREATE TABLE specializations (
+    vet_id INTEGER REFERENCES vets (id),
+    species_id INTEGER REFERENCES species (id),
+    PRIMARY KEY (vet_id, species_id)
+);
+-- Create the "visits" join table
+CREATE TABLE visits (
+    vet_id INTEGER REFERENCES vets (id),
+    animal_id INTEGER REFERENCES animals (id),
+    visit_date DATE,
+    PRIMARY KEY (vet_id, animal_id)
+);
