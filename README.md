@@ -113,7 +113,7 @@ No deployment required for a plain SQL database.
 
 - [ ] **[Advanced Search and Filter]**
 - [ ] **[Appointment Management]**
-- [ ] **[Medical Records]**
+- [ ] **[Owners' Details]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
